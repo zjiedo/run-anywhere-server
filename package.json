@@ -1,0 +1,26 @@
+{
+  "name": "staticserver",
+  "version": "1.0.0",
+  "description": "开启一个静态资源服务器",
+  "main": "app.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zjiedo/staticServer.git"
+  },
+  "keywords": [
+    "静态资源服务器"
+  ],
+  "author": "jill",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zjiedo/staticServer/issues"
+  },
+  "homepage": "https://github.com/zjiedo/staticServer#readme",
+  "dependencies": {
+    "chalk": "^2.4.2",
+    "handlebars": "^4.1.2"
+  }
+}
