@@ -21,7 +21,7 @@ module.exports = async function (filePath,req,res, config) {
 
         if(result.isFile()) {
             res.statusCode = 200;
-            res.setHeader('Content-Type',mime(filePath) + ';charset=utf8');
+            res.setHeader('Content-Type',mime(filePath));
 
             if(!cache (result, req, res)) {
                 res.statusCode = 304;

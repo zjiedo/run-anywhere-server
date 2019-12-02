@@ -20,19 +20,12 @@
         .layout ul li {
             width: 20%;
             padding: 8px 0;
-            list-style: none;
         }
         .layout ul li a {
             display: block;
             overflow: hidden;
             white-space: nowrap;
             text-overflow: ellipsis;
-            text-align: left;
-            color: #222;
-           
-        }
-        .layout ul li a:hover {
-            color: #999
         }
     </style>
     <title>{{ title }}</title>

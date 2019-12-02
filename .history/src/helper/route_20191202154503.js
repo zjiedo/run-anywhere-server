@@ -21,7 +21,7 @@ module.exports = async function (filePath,req,res, config) {
 
         if(result.isFile()) {
             res.statusCode = 200;
-            res.setHeader('Content-Type',mime(filePath) + ';charset=utf8');
+            res.setHeader('Content-Type',mime(filePath));
 
             if(!cache (result, req, res)) {
                 res.statusCode = 304;
@@ -53,7 +53,7 @@ module.exports = async function (filePath,req,res, config) {
 
             const files = await readdir(filePath)
             res.statusCode = 200;
-            res.setHeader('Content-Type','text/html;charset=utf8');
+            res.setHeader('Content-Type','text/html');
 
             const dir = path.relative(config.root,filePath)
 
@@ -67,7 +67,7 @@ module.exports = async function (filePath,req,res, config) {
 
     }catch(e) {
         res.statusCode = 404;
-        res.setHeader('Content-Type','text/html;charset=utf8');
+        res.setHeader('Content-Type','text/html');
         res.end(`${ filePath } is not a directory or file`)
         return;
     }

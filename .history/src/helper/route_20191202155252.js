@@ -16,6 +16,7 @@ const source = fs.readFileSync(path.resolve(__dirname,'../','template/dir.tpl'))
 let template = Handlebars.compile(source)
 
 module.exports = async function (filePath,req,res, config) {
+    console.log(filePath)
     try {
         let result = await stat(filePath);
 

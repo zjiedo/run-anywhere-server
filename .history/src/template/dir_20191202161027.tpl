@@ -20,7 +20,6 @@
         .layout ul li {
             width: 20%;
             padding: 8px 0;
-            list-style: none;
         }
         .layout ul li a {
             display: block;
